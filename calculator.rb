@@ -1,1 +1,1 @@
-# Add your variables here
+def variable first_number(2)
