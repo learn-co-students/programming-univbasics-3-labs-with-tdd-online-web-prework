@@ -1,5 +1,12 @@
-10
-13
-10+13 = 23
-13-10 = 3 
-13/10 = 1
+first_number = 10
+second_number = 13 
+#23 = sum
+#1 = difference
+#10+13 = 23 
+#13-10 = 3 
+#13/10 = 1
+#13*10 = 130
+sum = first_number + second_number  
+difference = first_number - second_number
+product = second_number * first_number
+quotient = first_number/ second_number
