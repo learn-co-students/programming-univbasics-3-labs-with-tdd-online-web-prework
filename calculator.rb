@@ -1,1 +1,5 @@
-# Add your variables here
+10
+13
+10+13 = 23
+13-10 = 3 
+13/10 = 1
