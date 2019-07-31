@@ -1,2 +1,3 @@
 # Add your variables here
-first_number = gets
+first_number = 5
+second_number = 8
