@@ -37,6 +37,7 @@ describe "./calculator.rb" do
     product = get_variable_from_file('./calculator.rb', "product")
 
     expect(product).to eq(first_number*second_number)
+
   end
 
   it "contains a local variable called quotient that is assigned to the result of dividing first_number by second_number" do
