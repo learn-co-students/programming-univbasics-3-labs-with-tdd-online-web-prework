@@ -1,4 +1,10 @@
 --color
 --fail-fast
---format documentation
+--format docum├── CONTRIBUTING.md
+├── LICENSE.md
+├── README.md
+├── calculator.rb
+└── spec
+    └── calculator_spec.rb
+    └── spec_helper.rbentation
 --require spec_helper
