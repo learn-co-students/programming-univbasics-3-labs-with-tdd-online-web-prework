@@ -29,12 +29,6 @@ the toughest labs ahead. In this lesson, we're going to walk through reading
 tests while also getting a little more practice with variables.
 
 ## Building a Simple Calculator
-
-Your task in this lab is to build a simple calculator. Using variables, this
-calculator will be able to take any two numbers and produce the result of their
-addition, subtraction, multiplication and division. The exact specifications we
-need to create this calculator are available to us... _in the tests_.
-
 ## Test Driven Behaviors
 
 When we want to run an experiment, we need to develop a hypothesis and we need
