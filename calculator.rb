@@ -6,7 +6,7 @@ def greeting_a_person(name)
 end
 
 
-#First Number
+#Calculator 
 
 first_number = 10
 
