@@ -1,4 +1,4 @@
-# Code your solution in calculator.rb
+# Code your solution in calcul
 
 describe "./calculator.rb" do
 
@@ -45,5 +45,7 @@ describe "./calculator.rb" do
     quotient = get_variable_from_file('./calculator.rb', "quotient")
 
     expect(quotient).to eq(first_number/second_number)
-  end
+expect(second_number).not_to equal(0)
+end
+
 end
