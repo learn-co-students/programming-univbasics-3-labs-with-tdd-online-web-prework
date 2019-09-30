@@ -1,10 +1,10 @@
-first_number = 1 # Add your variables here
-def first_number('./calculator.rb',"1")
-  puts 'first_number' 
-end 
-second_number =! 0 
-  puts 'first_number' += 1 
-end 
+first_number = 8 # Add your variables here
+second_number = 4
+
+sum = first_number + second_number
+difference = first_number - second_number
+product = first_number * second_number
+quotient = first number / second_number
 
 
 
