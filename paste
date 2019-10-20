@@ -1,0 +1,13 @@
+# Add your variables here
+def first_number
+  puts"1"
+end
+
+def second_number
+puts "2"
+end
+
+first_number
+second_number
+
+sum (first_number+second_number)
