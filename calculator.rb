@@ -1,12 +1,11 @@
+#Lab with Test Driven Development
 # Code your solution in calculator.rb
-# Describe "./calculator.rb" it "contains a local variable called first_number that is assigned to a number"
-# expect(first_number).to be_an(Integer).or be_a(Float)
 
 
-  
-first_number = 10
+puts first_number  =  10              #Test I
+puts second_number =  1000            #Test II
 
-  do
-    first_number = get_variable_from_file('./calculator.rb', "first_number")
-  end
-  
+sum= first_number + second_number #Test III
+difference  = first_number - second_number #Test VI
+product  = first_number * second_number #Test V
+quotient  = first_number / second_number #Test VI
