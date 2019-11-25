@@ -1,5 +1,6 @@
-tags:
-- lab
-languages:
-- Ruby
+lib/introduction.rb
+#introduction
+"Hi,my name is sanju."
+"Hi,my name is #(Sanju) and I am learning to program #(Ruby).
+
     
