@@ -106,17 +106,6 @@ The `describe` method holds our tests. Just after `describe` is a string,
 afterward will be about the file `calculator.rb`. We see the first one inside
 another RSpec method, `it`:
 
-```ruby
-it "contains a local variable called first_number that is assigned to a number" do
-  # code for first test is in here
-end
-```
-
-The `it` method has a longer string describing what this test is for. In this
-case, since this is _within_ the `describe` method, we can infer that
-`calculator.rb` contains a local variable called `first_number`, and that the
-variable is assigned to a number.
-
 Looking at what is inside, we can see the actual test that has been described:
 
 ```ruby
@@ -127,6 +116,17 @@ it "contains a local variable called first_number that is assigned to a number" 
 end
 ```
 
+
+```ruby
+it "contains a local variable called first_number that is assigned to a number" do
+  # code for first test is in here
+end
+```
+
+The `it` method has a longer string describing what this test is for. In this
+case, since this is _within_ the `describe` method, we can infer that
+`calculator.rb` contains a local variable called `first_number`, and that the
+variable is assigned to a number.
 Reading the first line, we see a variable, `first_number` being assigned to
 something, `get_variable_from_file`. This is actually another method! For now,
 we don't need to know what this method is doing (although, given its name, we
@@ -164,18 +164,6 @@ we saw in `describe` and `it`:
 Failures:
 
   1) ./calculator.rb contains a local variable called first_number that is assigned to a number
-     Failure/Error: raise NameError, "local variable #{variable} not defined in #{file}."
-
-     NameError:
-       local variable first_number not defined in ./calculator.rb.
-     # ./spec/spec_helper.rb:14:in `rescue in get_variable_from_file'
-     # ./spec/spec_helper.rb:11:in `get_variable_from_file'
-     # ./spec/calculator_spec.rb:6:in `block (2 levels) in <top (required)>'
-     # ------------------
-     # --- Caused by: ---
-     # NameError:
-     #   local variable `first_number' is not defined for #<Binding:0x00007fb7db153ca0>
-     #   ./spec/spec_helper.rb:12:in `local_variable_get'
 ```
 
 What if we were to create a variable called `first_number` inside
@@ -200,8 +188,22 @@ Failures:
      # ./spec/calculator_spec.rb:8:in `block (2 levels) in <top (required)>'
 ```
 
-Notice that the error message has changed. The test was able to get the
-variable `first_number` that we defined inside `calculator.rb`. It then runs
+Notice that the error message has changed. The t
+     Failure/Error: raise NameError, "local variable #{variable} not defined in #{file}."
+
+     NameError:
+       local variable first_number not defined in ./calculator.rb.
+     # ./spec/spec_helper.rb:14:in `rescue in get_variable_from_file'
+     # ./spec/spec_helper.rb:11:in `get_variable_from_file'
+     # ./spec/calculator_spec.rb:6:in `block (2 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # NameError:
+     #   local variable `first_number' is not defined for #<Binding:0x00007fb7db153ca0>
+     #   ./spec/spec_helper.rb:12:in `local_variable_get'est was able to get the
+variable `first_number` that we defined insidestand the tools you are using,
+the better equipped you will be as we progress to more and more complex topics.
+ `calculator.rb`. It then runs
 the test on `first_number` to see if it is a kind of integer or float. It isn't
 either, so the test fails.
 
@@ -212,23 +214,8 @@ when you are stuck in a lab. Reading test files and their results can give
 targeted insight into what is breaking and where when you're writing a solution.
 
 We will also provide instructions in the `README.md` file that will allow you to
-complete the lab. However, the better you understand the tools you are using,
-the better equipped you will be as we progress to more and more complex topics.
-
-### Solving the Tests for this Lab
-
-Now that you've got a sense of the tests in this lab, it is time to solve them
-all. There are six tests in total. In this lab, testing is configured with
-`--fail-fast`, so you will only see the first test that fails along with any
-passing tests before that. This means, as you pass each test, you'll see a
-growing list of passing tests until you've passed them all. Run `learn` as you
-work through each step below to see the test results.
-
-- The first test we've started to solve already. The test is looking for a
-  variable in `calculator.rb`, `first_number`. This variable should be set to
-  an integer or float
-
-- The second test is similar, but this time, looking for `second_number`.
+complete the lab. However, the better you under
+### Solving the Tests for this Lablooking for `second_number`.
   However, there is a second test here that must also pass:
 
 ```ruby
@@ -266,6 +253,19 @@ are then set up as test expectations. Once the tests are created, the actual cod
 is written to pass those tests.
 
 Writing our own tests is still a bit further down the path of learning Ruby, but
+
+Now that you've got a sense of the tests in this lab, it is time to solve them
+all. There are six tests in total. In this lab, testing is configured with
+`--fail-fast`, so you will only see the first test that fails along with any
+passing tests before that. This means, as you pass each test, you'll see a
+growing list of passing tests until you've passed them all. Run `learn` as you
+work through each step below to see the test results.
+
+- The first test we've started to solve already. The test is looking for a
+  variable in `calculator.rb`, `first_number`. This variable should be set to
+  an integer or float
+
+- The second test is similar, but this time, 
 being able to read tests is a skill that will be immediately helpful to you.
 
 ## Resources
