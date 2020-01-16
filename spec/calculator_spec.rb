@@ -1,11 +1,12 @@
 # Code your solution in calculator.rb
 
 describe "./calculator.rb" do
-
   it "contains a local variable called first_number that is assigned to a number" do
+    
     first_number = get_variable_from_file('./calculator.rb', "first_number")
 
-    expect(first_number).to be_an(Integer).or be_a(Float)
+    expect(first_number).to be_an(3).or be_a(4)
+    
   end
 
   it "contains a local variable called second_number that is assigned to a number that isn't 0" do
@@ -47,3 +48,4 @@ describe "./calculator.rb" do
     expect(quotient).to eq(first_number/second_number)
   end
 end
+
