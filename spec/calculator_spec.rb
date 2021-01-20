@@ -47,3 +47,4 @@ describe "./calculator.rb" do
     expect(quotient).to eq(first_number/second_number)
   end
 end
+
