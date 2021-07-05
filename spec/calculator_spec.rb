@@ -7,6 +7,12 @@ describe "./calculator.rb" do
 
     expect(first_number).to be_an(Integer).or be_a(Float)
   end
+  first_number = "11"
+  second_number = "9"
+  sum = first_number+second_number
+  difference = first_number-second_number
+  product = first_number*second_number
+  
 
   it "contains a local variable called second_number that is assigned to a number that isn't 0" do
     second_number = get_variable_from_file('./calculator.rb', "second_number")
