@@ -137,7 +137,7 @@ to `first_number`.
 Two lines down, we see something else that is new: `expect`.
 
 ```ruby
-expect(first_number).to be_an(Integer).or be_a(Float)
+
 ```
 
 This is the _actual_ test that will produce a passing or failing response when
