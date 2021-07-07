@@ -1,4 +1,4 @@
-# Code your solution in calculator.rb
+d# Code your solution in calculator.rb
 
 describe "./calculator.rb" do
 
