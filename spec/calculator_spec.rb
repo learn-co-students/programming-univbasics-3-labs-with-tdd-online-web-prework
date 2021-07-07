@@ -1,6 +1,6 @@
 # Code your solution in calculator.rb
 
-describe "./calculator.rb" do
+decribe calculator.rb do
 
   it "contains a local variable called first_number that is assigned to a number" do
     first_number = get_variable_from_file('./calculator.rb', "first_number")
