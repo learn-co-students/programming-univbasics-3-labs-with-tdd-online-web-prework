@@ -112,6 +112,8 @@ it "contains a local variable called first_number that is assigned to a number" 
 end
 ```
 
+
+
 The `it` method has a longer string describing what this test is for. In this
 case, since this is _within_ the `describe` method, we can infer that
 `calculator.rb` contains a local variable called `first_number`, and that the
